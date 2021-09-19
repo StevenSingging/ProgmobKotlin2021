@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ArrayAdapter
 import android.widget.ListView
+import androidx.recyclerview.widget.RecyclerView
 
 
 class LahanPetani : AppCompatActivity() {
@@ -11,12 +12,10 @@ class LahanPetani : AppCompatActivity() {
         "Abdulrohma", "Nama : AbdulRogman", "Total Jumlah Lahan : 1",
         "Jumlah Lahan yang Sudah Terindentifikasi :0", "Lahan yang bisa ditambahkan: 1"
     )
-    lateinit var lvLahan: ListView
+    lateinit var lvLahan: RecyclerView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_lahan_petani)
-        lvLahan = findViewById(R.id.lvLahan)
-        lvLahan.adapter = ArrayAdapter(this,
-            android.R.layout.simple_list_item_1, items )
+        setContentView(R.layout.rv_item_dutatani)
+
     }
 }
