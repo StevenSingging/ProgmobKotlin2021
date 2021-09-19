@@ -3,6 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/AndroidStudioProjects/ProgmobKotlin2021/app/src/main/res/layout/activity_lahan_petani.xml" value="0.22" />
+        <entry key="..\:/AndroidStudioProjects/ProgmobKotlin2021/app/src/main/res/layout/activity_sample_list.xml" value="0.22" />
+        <entry key="..\:/AndroidStudioProjects/ProgmobKotlin2021/app/src/main/res/layout/activity_sample_list_view.xml" value="0.2848101265822785" />
+        <entry key="..\:/AndroidStudioProjects/ProgmobKotlin2021/app/src/main/res/menu/menu_sample_list_view.xml" value="0.25" />
         <entry key="..\:/Users/ACER.ARSYADHELSING/AndroidStudioProjects/ProgmobKotlin2021/app/src/main/res/layout/activity_constraint.xml" value="0.17916666666666667" />
         <entry key="..\:/Users/ACER.ARSYADHELSING/AndroidStudioProjects/ProgmobKotlin2021/app/src/main/res/layout/activity_dutatani.xml" value="0.17916666666666667" />
         <entry key="..\:/Users/ACER.ARSYADHELSING/AndroidStudioProjects/ProgmobKotlin2021/app/src/main/res/layout/activity_help.xml" value="0.17916666666666667" />
