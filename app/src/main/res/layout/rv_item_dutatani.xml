@@ -7,6 +7,7 @@
     tools:context=".LahanPetani">
 
     <LinearLayout
+        android:id="@+id/Linearrr"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
@@ -64,6 +65,7 @@
     </SearchView>
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvLatihan1"
         android:layout_width="389dp"
         android:layout_height="648dp"
         android:layout_marginStart="11dp"

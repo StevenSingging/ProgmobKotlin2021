@@ -11,6 +11,7 @@ class SampleList : AppCompatActivity() {
     lateinit var btnlv : Button
     lateinit var btnlahan : Button
     lateinit var btnryc : Button
+    lateinit var btncv : Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -18,6 +19,8 @@ class SampleList : AppCompatActivity() {
         btnlv = findViewById(R.id.btnShowList)
         btnlahan = findViewById(R.id.btnLahan)
         btnryc = findViewById(R.id.btnSampleRV)
+        btncv = findViewById(R.id.btn_card)
+
         btnlv.setOnClickListener(View.OnClickListener { view ->
             var bundle = Bundle()
             var intent = Intent(this@SampleList,
@@ -41,6 +44,13 @@ class SampleList : AppCompatActivity() {
             intent.putExtras(bundle)
             startActivity(intent)
 
+        })
+        btncv.setOnClickListener(View.OnClickListener { view ->
+            var bundle = Bundle()
+            var intent = Intent(this@SampleList,
+                CardView::class.java)
+            intent.putExtras(bundle)
+            startActivity(intent)
         })
     }
 }
