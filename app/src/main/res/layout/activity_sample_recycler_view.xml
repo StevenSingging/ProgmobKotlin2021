@@ -6,6 +6,45 @@
     android:layout_height="match_parent"
     tools:context=".SampleRecyclerView">
 
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <TextView
+            android:id="@+id/txtUser1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="AX" />
+
+        <TextView
+            android:id="@+id/txtNama1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Steven S.S" />
+
+        <TextView
+            android:id="@+id/txtJumlahLahan1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1000" />
+
+        <TextView
+            android:id="@+id/txtIdentifikasi1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="50" />
+
+        <TextView
+            android:id="@+id/txtTambahLahan1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="100" />
+    </LinearLayout>
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvLatihan"
         android:layout_width="409dp"
@@ -19,5 +58,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.0">
+
+    </androidx.recyclerview.widget.RecyclerView>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -20,6 +20,7 @@
             android:exported="true" />
         <activity
             android:name=".LahanPetani"
+            android:label="Daftar Lahan Petani"
             android:exported="true" />
         <activity
             android:name=".SampleListView"

@@ -6,6 +6,14 @@
     android:layout_height="match_parent"
     tools:context=".LahanPetani">
 
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_lahan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        tools:layout_editor_absoluteX="11dp"
+        tools:layout_editor_absoluteY="82dp" />
+
     <LinearLayout
         android:id="@+id/Linearrr"
         android:layout_width="match_parent"
@@ -24,21 +32,21 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="0"
-            android:text="User" />
+            android:text="ABDULROHMA" />
 
         <TextView
             android:id="@+id/txtNama"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="0"
-            android:text="Nama" />
+            android:text="Nama : Abdul Rohma" />
 
         <TextView
             android:id="@+id/txtJumlahLahan"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="0"
-            android:text="Jumlah lahan" />
+            android:text="Jumlah lahan : 1" />
 
         <TextView
             android:id="@+id/txtIdentifikasi"
@@ -52,7 +60,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="0"
-            android:text="TambahLahan" />
+            android:text="TambahLahan : 0" />
     </LinearLayout>
 
     <SearchView
