@@ -8,23 +8,22 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.progmobkotlin2021.R
 import com.example.progmobkotlin2021.model.Petani
 
-class PetaniAdapter(val petani: List<Petani>):
-    RecyclerView.Adapter<PetaniAdapter.PetaniHolder>() {
+class PetaniAdapter(val petani: List<Petani>): RecyclerView.Adapter<PetaniAdapter.PetaniHolder>() {
     override fun onCreateViewHolder(
         parent: ViewGroup,
         viewType: Int
     ): PetaniAdapter.PetaniHolder {
-        return
-        PetaniHolder(LayoutInflater.from(parent.context).inflate(R.layout.rv_item_dutatani, parent, false))
-    }
-    override fun onBindViewHolder(holder: PetaniAdapter.PetaniHolder,
-                                  position: Int) {
-        holder.bindPetani(petani[position])
-    }
-    override fun getItemCount(): Int {
-        return petani.size
+        return PetaniHolder(LayoutInflater.from(parent.context).inflate(R.layout.rv_item_dutatani,parent,false))
     }
 
+    override fun onBindViewHolder(holder: PetaniAdapter.PetaniHolder, position: Int) {
+        holder.bindPetani(petani [position])
+    }
+
+    override fun getItemCount(): Int {
+        return petani.size
+
+    }
 
     class PetaniHolder(view: View) : RecyclerView.ViewHolder(view) {
         lateinit var txtUser: TextView
@@ -47,6 +46,4 @@ class PetaniAdapter(val petani: List<Petani>):
             }
         }
     }
-
 }
-
