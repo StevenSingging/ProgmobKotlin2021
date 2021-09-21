@@ -31,28 +31,28 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="0"
-            android:text="TextView" />
+            android:text="Nama" />
 
         <TextView
             android:id="@+id/txtJumlahLahan"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="0"
-            android:text="TextView" />
+            android:text="Jumlah lahan" />
 
         <TextView
             android:id="@+id/txtIdentifikasi"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="0"
-            android:text="TextView" />
+            android:text="identifikasi" />
 
         <TextView
             android:id="@+id/txtTambahLahan"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="0"
-            android:text="TextView" />
+            android:text="TambahLahan" />
     </LinearLayout>
 
     <SearchView

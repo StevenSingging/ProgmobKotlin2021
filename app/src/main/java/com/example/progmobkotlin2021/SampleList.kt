@@ -9,7 +9,6 @@ import android.widget.Button
 
 class SampleList : AppCompatActivity() {
     lateinit var btnlv : Button
-    lateinit var btnlahan : Button
     lateinit var btnryc : Button
     lateinit var btncv : Button
 
@@ -17,7 +16,6 @@ class SampleList : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sample_list)
         btnlv = findViewById(R.id.btnShowList)
-        btnlahan = findViewById(R.id.btnLahan)
         btnryc = findViewById(R.id.btnSampleRV)
         btncv = findViewById(R.id.btn_card)
 
@@ -25,14 +23,6 @@ class SampleList : AppCompatActivity() {
             var bundle = Bundle()
             var intent = Intent(this@SampleList,
                 SampleListView::class.java)
-            intent.putExtras(bundle)
-            startActivity(intent)
-
-        })
-        btnlahan.setOnClickListener(View.OnClickListener { view ->
-            var bundle = Bundle()
-            var intent = Intent(this@SampleList,
-                LahanPetani::class.java)
             intent.putExtras(bundle)
             startActivity(intent)
 
@@ -48,7 +38,7 @@ class SampleList : AppCompatActivity() {
         btncv.setOnClickListener(View.OnClickListener { view ->
             var bundle = Bundle()
             var intent = Intent(this@SampleList,
-                CardView::class.java)
+                SampleCardView::class.java)
             intent.putExtras(bundle)
             startActivity(intent)
         })
