@@ -17,32 +17,27 @@
         <TextView
             android:id="@+id/txtUser1"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="AX" />
+            android:layout_height="wrap_content" />
 
         <TextView
             android:id="@+id/txtNama1"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Steven S.S" />
+            android:layout_height="wrap_content" />
 
         <TextView
             android:id="@+id/txtJumlahLahan1"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="1000" />
+            android:layout_height="wrap_content" />
 
         <TextView
             android:id="@+id/txtIdentifikasi1"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="50" />
+            android:layout_height="wrap_content" />
 
         <TextView
             android:id="@+id/txtTambahLahan1"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="100" />
+            android:layout_height="wrap_content" />
     </LinearLayout>
 
     <androidx.recyclerview.widget.RecyclerView

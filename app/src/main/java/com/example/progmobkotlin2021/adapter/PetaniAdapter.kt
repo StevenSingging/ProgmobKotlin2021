@@ -13,7 +13,7 @@ class PetaniAdapter(val petani: List<Petani>): RecyclerView.Adapter<PetaniAdapte
         parent: ViewGroup,
         viewType: Int
     ): PetaniAdapter.PetaniHolder {
-        return PetaniHolder(LayoutInflater.from(parent.context).inflate(R.layout.rv_item_dutatani,parent,false))
+        return PetaniHolder(LayoutInflater.from(parent.context).inflate(R.layout.activity_sample_card_view,parent,false))
     }
 
     override fun onBindViewHolder(holder: PetaniAdapter.PetaniHolder, position: Int) {
@@ -33,11 +33,11 @@ class PetaniAdapter(val petani: List<Petani>): RecyclerView.Adapter<PetaniAdapte
         lateinit var txtTambahLahan: TextView
         fun bindPetani(petani: Petani) {
             itemView.apply {
-                txtUser = findViewById(R.id.txtUser)
-                txtNama = findViewById(R.id.txtNama)
-                txtJumlahLahan = findViewById(R.id.txtJumlahLahan)
-                txtIdentifikasi = findViewById(R.id.txtIdentifikasi)
-                txtTambahLahan = findViewById(R.id.txtTambahLahan)
+                txtUser = findViewById(R.id.txtuser2)
+                txtNama = findViewById(R.id.txtnama2)
+                txtJumlahLahan = findViewById(R.id.txtjumlahlahan2)
+                txtIdentifikasi = findViewById(R.id.txtidentifikasi2)
+                txtTambahLahan = findViewById(R.id.txttambahlahan2)
                 txtUser.text = petani.user
                 txtNama.text = petani.nama
                 txtJumlahLahan.text = petani.jumlahLahan

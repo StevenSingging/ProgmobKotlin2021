@@ -40,7 +40,7 @@ class SampleList : AppCompatActivity() {
         btncv.setOnClickListener(View.OnClickListener { view ->
             var bundle = Bundle()
             var intent = Intent(this@SampleList,
-                SampleCardView::class.java)
+                CardView::class.java)
             intent.putExtras(bundle)
             startActivity(intent)
         })
