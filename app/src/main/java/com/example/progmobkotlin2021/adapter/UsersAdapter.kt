@@ -34,7 +34,7 @@ class UsersAdapter(val users: List<ResponseItem>?):
                 txtNama = findViewById(R.id.nama)
                 txtEmail = findViewById(R.id.email)
                 txtAlamat = findViewById(R.id.alamat)
-                txtNoTelp = findViewById(R.id.notelp)
+                txtNoTelp = findViewById(R.id.noTelp)
                 txtNama.text = users?.name
                 txtEmail.text = users?.email
                 val address = "${users?.address?.street},${users?.address?.city}, ${users?.address?.suite}, ${users?.address?.zipcode}"

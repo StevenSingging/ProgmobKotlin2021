@@ -16,7 +16,7 @@ class ServiceActivity : AppCompatActivity() {
         btnget.setOnClickListener(View.OnClickListener { view ->
             var bundle = Bundle()
             var intent = Intent(this@ServiceActivity,
-                GetAPIActivity::class.java)
+                APIActivity::class.java)
             intent.putExtras(bundle)
             startActivity(intent)
         })

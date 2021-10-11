@@ -12,6 +12,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ProgmobKotlin2021">
         <activity
+            android:name=".APIActivity"
+            android:exported="true" />
+        <activity
+            android:name=".API"
+            android:exported="true"
+            android:label="@string/title_activity_api"
+            android:theme="@style/Theme.ProgmobKotlin2021.NoActionBar" />
+        <activity
             android:name=".GetAPIActivity"
             android:exported="true" />
         <activity

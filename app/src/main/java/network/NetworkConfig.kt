@@ -1,6 +1,8 @@
 package network
 
+import com.example.progmobkotlin2021.model.DataItem
 import com.example.progmobkotlin2021.model.ResponseItem
+import com.example.progmobkotlin2021.model.ResponsePetani
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Call
@@ -20,7 +22,7 @@ class NetworkConfig {
     }
     fun getRetrofit() : Retrofit {
         return Retrofit.Builder()
-            .baseUrl("https://jsonplaceholder.typicode.com/")
+            .baseUrl("http://localhost/SLIM-TOKOBUAH/public/petani")
             .client(getInterceptor())
             .addConverterFactory(GsonConverterFactory.create())
             .build()
@@ -29,5 +31,5 @@ class NetworkConfig {
 }
 interface Users {
     @GET("users")
-    fun getUsers(): Call<List<ResponseItem>>
+    fun getUsers(): Call<List<DataItem>>
 }
