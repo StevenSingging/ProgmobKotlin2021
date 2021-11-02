@@ -12,13 +12,23 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ProgmobKotlin2021">
         <activity
-            android:name=".APIActivity"
+            android:name=".LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".UpdatePetaniActivity"
             android:exported="true" />
         <activity
-            android:name=".API"
-            android:exported="true"
-            android:label="@string/title_activity_api"
-            android:theme="@style/Theme.ProgmobKotlin2021.NoActionBar" />
+            android:name=".AddPetaniActivity"
+            android:exported="true" />
+        <activity
+            android:name=".APIActivity"
+            android:exported="true" />
         <activity
             android:name=".GetAPIActivity"
             android:exported="true" />
@@ -26,11 +36,7 @@
             android:name=".ServiceActivity"
             android:exported="true"
             android:label="Service">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".CardView"

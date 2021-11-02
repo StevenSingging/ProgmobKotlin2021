@@ -17,27 +17,11 @@ import retrofit2.Response
 
 class APIActivity : AppCompatActivity() {
     lateinit var rvUser1 : RecyclerView
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
+    override fun onRestart() {
+        super.onRestart()
         setContentView(R.layout.activity_apiactivity)
         rvUser1 = findViewById(R.id.RVPetani1)
-        NetworkConfig().getService()
-            .getUsers()
-            .enqueue(object : Callback<ResponsePetani?> {
-                override fun onFailure(call: Call<List<ResponsePetani?>>, t:
-                Throwable) {
-                    Toast.makeText(this@APIActivity, t.localizedMessage,
-                        Toast.LENGTH_SHORT).show()
-                }
-                override fun onResponse(
-                    call: Call<List<DataItem>>,
-                    response: Response<List<DataItem>>
-                ) {
-                    rvUser1.apply{
-                        layoutManager = LinearLayoutManager(this@APIActivity)
-                        adapter = APIAdapter(response.body())
-                    }
-                }
-            })
+
+
     }
 }
