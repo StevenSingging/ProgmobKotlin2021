@@ -28,6 +28,7 @@ class GetAPIActivity : AppCompatActivity() {
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         val inflater = menuInflater
+        this.setTitle("Admin")
         inflater.inflate(R.menu.menu_logout,menu)
         return super.onCreateOptionsMenu(menu)
     }
